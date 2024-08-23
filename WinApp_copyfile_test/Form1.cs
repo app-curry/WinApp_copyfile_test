@@ -15,6 +15,13 @@ namespace WinApp_copyfile_test
         public Form1()
         {
             InitializeComponent();
+
+            init();
+        }
+
+        void init()
+        {
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }
