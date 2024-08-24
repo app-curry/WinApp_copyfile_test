@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApp_copyfile_test", "WinApp_copyfile_test\WinApp_copyfile_test.csproj", "{5068D734-AA58-4430-9C6B-8F6BA2C38006}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadTestLibrary", "ThreadTestLibrary\ThreadTestLibrary.csproj", "{604BBD97-CA0B-430F-A059-BC3861B936CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5068D734-AA58-4430-9C6B-8F6BA2C38006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5068D734-AA58-4430-9C6B-8F6BA2C38006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5068D734-AA58-4430-9C6B-8F6BA2C38006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604BBD97-CA0B-430F-A059-BC3861B936CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604BBD97-CA0B-430F-A059-BC3861B936CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604BBD97-CA0B-430F-A059-BC3861B936CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604BBD97-CA0B-430F-A059-BC3861B936CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

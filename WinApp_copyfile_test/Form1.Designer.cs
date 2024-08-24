@@ -92,7 +92,7 @@
             this.textBox_todir.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBox_todir.Location = new System.Drawing.Point(12, 104);
             this.textBox_todir.Name = "textBox_todir";
-            this.textBox_todir.Size = new System.Drawing.Size(525, 28);
+            this.textBox_todir.Size = new System.Drawing.Size(722, 28);
             this.textBox_todir.TabIndex = 1;
             // 
             // textBox_source
@@ -102,7 +102,7 @@
             this.textBox_source.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBox_source.Location = new System.Drawing.Point(12, 33);
             this.textBox_source.Name = "textBox_source";
-            this.textBox_source.Size = new System.Drawing.Size(525, 28);
+            this.textBox_source.Size = new System.Drawing.Size(722, 28);
             this.textBox_source.TabIndex = 0;
             // 
             // button_execute
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(746, 355);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.label_todir);
             this.Controls.Add(this.label_source);
