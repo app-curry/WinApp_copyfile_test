@@ -147,6 +147,9 @@ namespace WinApp_copyfile_test
                 }
             }
 
+            button_execute.Enabled = false;
+            button_cancel.Enabled = true;
+
             FileCopyThread fileCopy = new FileCopyThread(this, source, todir);
 
             fileCopy.ThreadStartEvent += FileCopy_ThreadStartEvent;
@@ -163,10 +166,6 @@ namespace WinApp_copyfile_test
 
         private void FileCopy_ThreadStartEvent(object sender)
         {
-
-            button_execute.Enabled = false;
-            button_cancel.Enabled = true;
-
         }
 
         private void FileCopy_ThreadProgressEvent(object sender, long step, long max)
