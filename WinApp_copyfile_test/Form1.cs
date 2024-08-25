@@ -37,10 +37,27 @@ namespace WinApp_copyfile_test
             button_cancel.Click += Button_cancel_Click;
             button_execute.Click += Button_execute_Click;
 
+            this.FormClosing += Form1_FormClosing;
+
             progressBar_filecopy.Maximum = 1000;
 
             button_cancel.Enabled = false;
 
+        }
+
+        private bool _formclosing = false;
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (_fileCopyThread != null && !_formclosing)
+            {
+                e.Cancel = true;
+
+                _formclosing = true;
+
+                _fileCopyThread.Cancel();
+
+            }
         }
 
         private void TextBox_Path_DragEnter(object sender, DragEventArgs e)
@@ -196,6 +213,11 @@ namespace WinApp_copyfile_test
             {
                 MessageBox.Show("完了しました。", "");
             }
+
+            if (_formclosing)
+            {
+                this.Close();
+            }
         }
 
         private void Button_cancel_Click(object sender, EventArgs e)
@@ -205,8 +227,6 @@ namespace WinApp_copyfile_test
                 _fileCopyThread.Cancel();
             }
         }
-
-
 
     }
 }
