@@ -13,9 +13,9 @@ using WinApp_copyfile_test.Utility;
 
 namespace WinApp_copyfile_test
 {
-    public partial class Form1 : Form
+    public partial class Form_CopyFile : Form
     {
-        public Form1()
+        public Form_CopyFile()
         {
             InitializeComponent();
 
@@ -189,6 +189,11 @@ namespace WinApp_copyfile_test
         {
             label_filesize.Text = string.Format("{0}/{1}", step, max);
 
+            // ファイルサイズが0のとき
+            // （空のテキストファイルなど）
+            if (max == 0)
+                return;
+
             decimal decval1 = (decimal)step / max;
             decimal decval2 = decval1 * 1000;
             int ival = (int)decval2;
@@ -227,6 +232,7 @@ namespace WinApp_copyfile_test
                 _fileCopyThread.Cancel();
             }
         }
+
 
     }
 }

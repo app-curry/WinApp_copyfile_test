@@ -21,7 +21,7 @@ namespace WinApp_copyfile_test.Utility
         {
             OnThreadStartEvent(this);
 
-            Copy(_sourcefile, _todir);
+            CopyFile(_sourcefile, _todir);
 
             OnThreadCompleteEvent(this, _isBreak);
         }
@@ -34,7 +34,7 @@ namespace WinApp_copyfile_test.Utility
         private string _sourcefile = string.Empty;
         private string _todir = string.Empty;
 
-        protected void Copy(string sourcefile, string todir)
+        protected void CopyFile(string sourcefile, string todir)
         {
             string filename = Path.GetFileName(sourcefile);
             string topath = Path.Combine(todir, filename);
